@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sabgatula Burhan</title>
+  <link rel="stylesheet" href="index.css" />
+  <meta name="description" content="Sabgatulla Burhan — personal site, contact: sabgatullaburhan@gmail.com, 01763816283">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">Burhan</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="name">Sabgatulla Burhan</h1>
+        <p class="tagline"> — Web Devoloper </p>
+
+        <div class="cta">
+          <a class="btn-primary" href="mailto:sabgatullaburhan@gmail.com">Email me </a>
+          <a class="btn-outline" href="tel:+8801763816283">Call me : 01763816283</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="avatar">
+            <!-- Replace this with your photo if you want -->
+            <div class="avatar-placeholder">WD</div>
+          </div>
+          <div class="about-text">
+            <p>I am Sabgatulla Burhan — an aspiring web developer. I love building beautiful, responsive, and user-friendly websites. Below are my skills and contact information.</p>
+            <ul>
+              <li>Email: <a style="color: rgb(238, 85, 141); text-decoration: none;" href="mailto:sabgatullaburhan@gmail.com">sabgatullaburhan@gmail.com</a></li>
+              <li>Phone : <a style="color: rgb(228, 99, 133); text-decoration: none;" href="tel:+8801763816283">01763816283</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Basic SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>See the button below to send an email directly or call.</p>
+        <div class="contact-buttons">
+          <a class="btn-primary" href="mailto:sabgatullaburhan@gmail.com"> Email: sabgatullaburhan@gmail.com</a>
+          <a class="btn-outline" href="tel:+8801763816283">Contact: 01763816283</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sabgatulla Burhan — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
