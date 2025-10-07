@@ -147,7 +147,32 @@ h2{margin:0 0 18px 0;font-size:22px;color:var(--text)}
 .contact{ 
     color: #60A5FA;
 }
+/* Smooth scroll animation */
+html {
+  scroll-behavior: smooth;
+}
 
+/* Fade + slide-up animation for sections */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero floating animation */
+.hero-inner {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 
 
 
@@ -156,4 +181,26 @@ h2{margin:0 0 18px 0;font-size:22px;color:var(--text)}
   .avatar-placeholder{width:120px;height:120px;font-size:28px;border-radius:12px}
   .nav-links{display:none}
   .hero{min-height:55vh;padding:28px 12px}
+}
+@media (max-width:700px){
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .brand {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none; /* চাইলে visible ও রাখতে পারো */
+  }
+
+  .hero {
+    min-height: 55vh;
+    padding: 28px 12px;
+  }
 }

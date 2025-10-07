@@ -101,6 +101,24 @@
   <script>
     // auto year
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    
+  // auto year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // scroll animation for sections
+  const sections = document.querySelectorAll('.section');
+  const showSection = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top;
+      if (top < triggerBottom) {
+        section.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', showSection);
+  showSection(); // run once initially
+</script>
+  
 </body>
 </html>
