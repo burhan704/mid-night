@@ -112,12 +112,21 @@ h2{margin:0 0 18px 0;font-size:22px;color:var(--text)}
 .about-grid{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .avatar{flex:0 0 160px}
 .avatar-placeholder{
-  width:160px;height:160px;border-radius:16px;
+  width:160px;
+  height:160px;
+  border-radius:16px;
   background:linear-gradient(135deg, rgba(96,165,250,0.15), rgba(110,231,183,0.08));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:800;font-size:36px;color:var(--text);box-shadow:0 8px 30px rgba(2,6,23,.6)
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:36px;
+  color:var(--text);
+  box-shadow:0 8px 30px rgba(2,6,23,.6)
 }
-.about-text{flex:1;min-width:240px;color:var(--muted)}
+.about-text{flex:1;
+  min-width:240px;
+  color:var(--muted)}
 .about-text ul{padding-left:18px}
 
 /* Skills */
